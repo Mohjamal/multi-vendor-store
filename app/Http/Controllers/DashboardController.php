@@ -13,7 +13,7 @@ class DashboardController extends Controller
 
         // Return response: view, json, redirect, file
         return view('dashboard.index', [
-            'user' => 'Mohammedjamal',
+            'user' => 'Mohammedjamal Elkhatib',
             'title' => $title
         ]);
     }

@@ -1,6 +1,9 @@
 @extends('layouts.dashboard')
 
-@section('title','Starter Pager')
+@section('breadcrumb')
+@parent
+<li class="breadcrumb-item active">Starter Page</li>
+@endsection
 
 @section('content')
 <div class="row">
@@ -65,4 +68,13 @@
     <!-- /.col-md-6 -->
 </div>
 <!-- /.row -->
-@stop
+@endsection
+
+@push('styles')
+<link rel="stylesheet" href="{{ asset('dist/css/style1.css') }}">
+<link rel="stylesheet" href="{{ asset('dist/css/style2.css') }}">
+@endpush
+
+@push('scripts')
+<script src="{{ asset('dist/js/script.js') }}"></script>
+@endpush
